@@ -50,6 +50,7 @@ header {
 
 /* luminocidad del logo */
 img {
+  font-size: 2em
   display: flex;
   margin: 0;
   border: 5px solid blue;
