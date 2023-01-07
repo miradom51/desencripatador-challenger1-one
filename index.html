@@ -7,79 +7,98 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./img/cdm.ico">
     <script type="text/javascript" src="./js/script.js"></script>
-    <title>decodificador de mensajes</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <title>Decodificador de mensajes</title>
 </head>
+<!-- ID Particles.js -->
 <body>
+    <div id="particles-js"></div>
 
-    <!-- ID Particles.js -->
-    <div id="particles-js"></div> 
+       
+            <div class="contenedor">
+                <header class="title">
+                    <div class="logo">
+                        <img src="./img/Vector.png" alt="">
+                    </div>
+                    <div class="title"> <p>
+                        challenge N°1
+                        <span class="span">
+                        Desencriptador
+                        </span>
+                        &mdash; de Mensajes &mdash;
+                    </p></div>
+                </header>
 
-    <main class="container">
+                <section class="main">
+                    <div class="lado-izquierdo">
+                        <h2 class="title1">TEXTO</h2>
+                        <div class="elemento1 animate1">
+                            <textarea class="input1"  id="input-Area" type="text" placeholder="Ingrese un texto Aqui! solo texto ne minuscula y sin asentos"></textarea>
+                        </div>
+                        <div class="btn">
+                            <a class="neon" title="limpiar" type="button" id="limpiarb" onclick="limpiar()">
+                                <span class="span1"></span>
+                                <span class="span2"></span>
+                                <span class="span3"></span>
+                                <span class="span4"></span>
+                                Limpiar
+                            </a>
 
-            <header class="title">
-                <div class="logo"><img src="./img/vector.png" alt=""> </div>
-                <h1 class="titulo">Decodificador de mensajes</h1>
-            </header>
-        
-        <div class="lado-right">
-            <h2 class="title1">TEXTO</h1>
-                <textarea class="input1"  id="input-Area" type="text" placeholder="Ingrese aqui un texto! solo texto en minusculas y sin caracteres especiales "></textarea>
+                            <a class="neon" title="encriptar" type="button" id="encripb" onclick="encriptar()">
+                                <span class="span1"></span>
+                                <span class="span2"></span>
+                                <span class="span3"></span>
+                                <span class="span4"></span> 
+                                Encriptar
+                            </a>
 
-                <button class="button1" title="limpiar" type="button" id="limpiarb" onclick="limpiar()">Limpiar</button>
+                            <a class="neon" title="desencriptar" type="button" id="desencripb" onclick="desencriptar()">
+                                <span class="span1"></span>
+                                <span class="span2"></span>
+                                <span class="span3"></span>
+                                <span class="span4"></span>
+                                 Desencriptar
+                            </a>
+                        </div>
+                    </div>
+                </section>
 
-                <button class="button2" title="encriptar" type="button" id="encripb" onclick="encriptar()">Encriptar</button>
+                <aside class="lado-derecho">
+                    <h2 class="title2">ENCRIPTACION</h2>
+                    <div class="elemento animate">
+                        <textarea class="input2" id="copiar-Area" type="text" placeholder="No hay texto a traducir">No se encontro ningun texto !</textarea>
+                    </div>
+                    <div class="btn boton4">
+                        <a class="button4" id="copy"  onclick="copiar()">Copiar</a>
+                    </div>
+                </aside>
 
-                <button class="button3" title="desencriptar" type="button" id="desencripb" onclick="desencriptar()">Desencriptar</button>
-        </div>
+                <footer>
+                    <div class="social">
+                        <ul>
+                            <li>
+                              <a href="https://facebook.com">
+                                <i class="fab fa-facebook-f icon"></i>    </a>
+                            </li>
+                            <li>
+                              <a href="https://twitter.com"><i class="fab fa-twitter icon"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-linkedin-in icon"></i></a></li>
+                            <li>
+                              <a href="#"><i class="fab fa-github icon"></i></a></li>
+                          </ul>
+                    </div>
+                    <div class="box1">
+                        <i class="fa fa-copyright logo1" aria-hidden="true"></i>
+                        <p class="parrafo">creado por Cristian Miranda 2023</p>
+                    </div>
+                </footer>
 
-        <div class="lado-left" >
-            <h2 class="title2">ENCRIPTACION</h2>
-            <textarea class="input2" id="copiar-Area" type="text" placeholder="No hay texto a traducir">No se encontro ningun texto!!!</textarea>
-            <button class="button4" id="copy" type="button" onclick="copiar()">Copiar</button>
-        </div>
+            </div>
 
-        <div class="section">
-            <section>  </section>
-        </div>
-
-        <div class="footer">
-            <footer class="footer-distributed">
-
-                <div class="footer-right">
-                    <a href="https://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
-                    <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
-                    <a href="https://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
-                    <a href="https://github.com" target="_blank"><i class="fa fa-github"></i></a>
-                </div>
-
-                <div class="footer-left">
-                    <p class="footer-links">
-                            <a class="link-1" href="#">Home</a>
-
-                        <a href="#">Blog</a>
-
-                        <a href="#">Pricing</a>
-
-                        <a href="#">About</a>
-
-                        <a href="#">Faq</a>
-
-                        <a href="#">Contact</a>
-                    </p>
-                    <p>CristianMiranda &copy; 2022</p>
-                </div>   
-            </footer>
-        </div>
-    
-    </main>
-    
-     <!-- JS Particles.js -->
-     <script src="./js/particles.js"></script>
-     <script src="./js/app.js"></script>
-
-      <!-- JS FontAwesome -->
-     <script src="https://kit.fontawesome.com/a2e8d0339c.js"></script>
-
-
+            <!-- JS Particles.js -->
+    <script src="./js/particles.min.js"></script>
+    <script src="./js/particles-config.json"></script>
 </body>
 </html>
