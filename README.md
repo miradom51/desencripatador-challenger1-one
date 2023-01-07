@@ -1,7 +1,7 @@
 <h1 align="center"># desencripatador-challenger1-one</h1>
 <br>
 <br>
-<img src="https://user-images.githubusercontent.com/120273781/209833933-7ccbb087-fc58-4799-b8ca-3f8783892e03.PNG">
+<img src="https://user-images.githubusercontent.com/120273781/211132779-1adf2acb-957f-4b85-8009-f7c56d86f216.PNG">
 <br> 
 <h1 align="center">LINK <a href="https://miradom51.github.io/desencripatador-challenger1-one/" target="blank">🔍 APLICACION</a></h1>
 <br>
